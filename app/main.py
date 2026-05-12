@@ -26,7 +26,7 @@ def health():
     }
 
 
-@app.post("/chat")
+'''@app.post("/chat")
 def chat(request: ChatRequest):
 
     latest_user_message = ""
@@ -85,5 +85,13 @@ def chat(request: ChatRequest):
     return {
         "reply": ai_reply,
         "recommendations": recommendations,
+        "end_of_conversation": True
+    }'''
+
+@app.post("/chat")
+def chat():
+    return {
+        "reply": "SHL chatbot working successfully",
+        "recommendations": [],
         "end_of_conversation": True
     }

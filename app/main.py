@@ -2,10 +2,6 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from typing import List
 
-'''from app.retriever import retrieve
-from app.llm import generate_response
-from app.prompts import SYSTEM_PROMPT'''
-
 app = FastAPI()
 
 

@@ -4,6 +4,12 @@ from typing import List
 
 app = FastAPI()
 
+@app.get("/")
+def root():
+    return {
+        "message": "SHL Chatbot API is running"
+    }
+
 
 class Message(BaseModel):
     role: str
